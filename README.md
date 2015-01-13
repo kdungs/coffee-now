@@ -1,4 +1,4 @@
-# CoffeeNow! Server
+# CoffeeNow!
 
 Experimenting with an app that allows you to have a coffee with people close by on short notice.
 
