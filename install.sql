@@ -7,14 +7,20 @@ CREATE TABLE CoffeePeople (
 
 CREATE TABLE CoffeeTokens (
   Id serial PRIMARY KEY,
-  Person serial
+  Person serial not null
 );
 
 CREATE TABLE CoffeeRequests (
   Id serial PRIMARY KEY,
-  Host serial,
+  Host serial not null,
   Date timestamp with time zone not null,
-  Label varchar(100),
+  Label varchar(100) not null,
   Lat double precision,
   Lng double precision
 );
+
+CREATE TABLE CoffeeResponses {
+  Id serial PRIMARY KEY,
+  Request serial not null,
+  Person serial not null
+}
