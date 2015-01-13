@@ -102,6 +102,7 @@ func main() {
 			// Actually send error message and close connection...
 		} else {
 			log.Printf("%s registered.\n", person.Name)
+			log.Printf("%s - %s\n", ws.LocalAddr(), ws.RemoteAddr())
 			suc := struct {
 				Status string
 			}{"Success"}
